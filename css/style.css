@@ -1,0 +1,542 @@
+html { scroll-behavior: smooth;}
+body{
+    font-family: 'M PLUS 1p', sans-serif;
+    width:1000px;
+    max-width:100%;
+    margin:auto;
+    text-align: center;
+}
+img{
+    max-width: 100%;
+}
+
+/* -----------------
+header タイトル表示とプレーヤー数選択
+*------------------- */
+h1{
+    font-size: 30px;
+    margin: 10px 0 100px 0;
+}
+
+.player_wrapper{
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  margin: 0 0 500px 0;
+}
+
+.player{
+  width: 500px;
+  height:300px;
+  border-radius: 20px;
+  border: black 8px double;
+  margin: 0 10px;
+}
+
+.player_1{
+width:auto;
+height: 160px;
+background-color: skyblue;
+font-size: 40px;
+color: whitesmoke;
+font-weight: bold;
+border-radius: 10px;
+line-height: 160px;
+margin: 0 0 20px 0;
+}
+
+.onamae{
+width:auto;
+display:flex;
+margin: 0 0 5px 0;
+align-items: center;
+justify-content:center;
+
+}
+
+.tensuu{
+  width:auto;
+  margin: 0 0 5px 0;
+
+}
+
+#save{
+  height:24px;
+
+}
+
+/* -----------------
+message box メッセージボックス
+*------------------- */
+.message_title{
+    font-size:16px;
+}
+.message_box{
+    font-weight: bold;
+    width:700px;
+    height: 100px;
+    background-color: whitesmoke;
+    color: black;
+    margin:0 auto 20px;
+    border: black 4px double;
+    border-radius: 10px;
+    display:table;
+    }
+
+.message_contents{
+    width:100%;
+    height:100%;
+    display:table-cell;
+    vertical-align: middle;
+}
+/* -----------------
+Name and HP 名前とヒットポイント
+*------------------- */
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+.name_hp{
+    background-color: whitesmoke;
+    width: 500px;
+    height:70px;
+    position: relative;
+    margin:0 20px;
+    }
+
+.name_box{
+  position:absolute;
+  display:flex;
+  left: 10px;
+  top: 5px;
+}
+
+.name_base{
+    font-weight: bold;
+    /* position:absolute; */
+    font-size: 20px;
+    }
+.name{
+    font-weight: bold;
+    /* position:absolute; */
+    font-size: 20px;
+
+}
+.hp{
+    font-weight: bold;
+    position: absolute;
+    left:30px;
+    top:40px;
+}
+
+.hp_gage{
+    position:absolute;
+    left:80px;
+    top: 40px;
+}
+.hp_max{
+    width: 350px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+}
+.hp_now{
+    width: 350px;
+    height: 20px;
+    background-color: yellowgreen;
+    text-align: right;
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+/* -----------------
+battle field 戦場
+*------------------- */
+.battle_character{
+    width: 250px;
+    margin:0 0px 0 120px;
+}
+
+.battle_character.chara_b{
+    margin:0 100px 0 20px;
+}
+
+.battle_hand{
+    width: 150px;
+}
+
+.VS{
+    font-size: 50px;
+}
+
+/* -----------------
+select options ぐーちょきぱーの選択肢
+*------------------- */
+.wrapper.option{
+    justify-content: center;
+    margin:0 0 10px 0;
+}
+.option_box{
+    width: 130px;
+    height: 70px;
+    display:flex;
+    background-color: whitesmoke;
+    margin:0 0 0 20px;
+    align-items: center;
+}
+.option_box img{
+    height:100%}
+
+.option_hand{
+    font-size: 14px;}
+
+.space_box{
+  width:40px;
+}
+.space_box2{
+  width:500px;
+}
+/* -----------------
+button 最初に戻る/あいてともう一回ボタン
+*------------------- */
+.button_wrap{
+    text-align: right;
+    margin: 0 0 5px 0;
+}
+
+.btn{
+    width:150px;
+    height:25px;
+}
+/* -----------------
+コメント入力欄
+*------------------- */
+.comment_wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.comment_send{
+margin: 0 0 10px 0;
+}
+.comment_box{border: solid 1px;
+  margin:0 auto 5px auto;
+  width:500px;
+  height:100px;
+  overflow: scroll;
+}
+.comment_clear{
+  margin:0 0 30px 0;
+}
+
+/* -----------------
+成績表
+*------------------- */
+.seiseki{
+  border: black 4px double;
+  font-weight: bold;
+  width:700px;
+  height: 20px;
+  margin: 0 auto 20px auto;
+  font-size: 20px;
+}
+
+.tablesorter{
+  margin: 0 auto 10px auto;
+}
+
+table {
+  margin: 20px 3%;
+  border: 1px solid #8dc3f5;
+  width: 600px;
+}
+
+thead th{
+background-color: lightblue;
+}
+
+th {
+  width: 30%;
+  font-size: 20px;
+  background-color: #d0e7fc;
+  border-bottom: 1px solid #8dc3f5;
+}
+td {
+  font-size: 20px;
+  background-color: rgb(241, 239, 239);
+  border-bottom: 1px solid #8dc3f5;
+}
+
+.shikiri{
+  width:100%;
+  padding:10px 0;
+  margin: 0 0 200px 0;
+  background-color: #707070;
+}
+
+.clear{
+  margin:0 0 200px 0;
+}
+/* -----------------
+footer
+*------------------- */
+.footer{
+    width:100%;
+    padding:10px 0;
+    background-color: #707070;
+}
+  
+.copyrights{
+    color:#fff;
+}
+
+/*============
+nav
+=============*/
+nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -600px;
+    bottom: 0;
+    width: 600px;
+    background: #ffffff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: .5s;
+    z-index: 3;
+  }
+.open nav {
+left: 0;
+}
+nav .inner {
+padding: 0px;
+}
+
+@media screen and (max-width: 767px) {
+nav {
+    left: -100px;
+    width: 100px;
+}
+}
+.select_message{
+    margin: 10px 0 10px 0;
+    
+
+
+}
+
+.select_wrapper{
+        display:flex;
+        justify-content: center;
+        margin:0 0 20px 0;
+}
+
+.select_chara{
+        width:200px;
+        height:25px;
+        display:block;
+}
+    
+.pulldown{
+        width:200px;
+        height:25px;
+}
+    
+.btn2{
+        width:100px;
+        height:25px;
+    }
+
+.hako_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hako{
+    width: 100px;
+    height:100px;
+    border: solid 2px black;
+    margin: 2px 30px;
+}
+
+.hako img{height:100%}
+
+
+  /*============
+  @keyframes
+  =============*/
+  @keyframes equalizer01 {
+    0% {
+      width: 70%;
+    }
+    10% {
+      width: 50%;
+    }
+    20% {
+      width: 100%;
+    }
+    30% {
+      width: 10%;
+    }
+    40% {
+      width: 50%;
+    }
+    50% {
+      width: 70%;
+    }
+    60% {
+      width: 50%;
+    }
+    70% {
+      width: 10%;
+    }
+    80% {
+      width: 100%;
+    }
+    90% {
+      width: 10%;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+  @keyframes equalizer02 {
+    0% {
+      width: 30%;
+    }
+    10% {
+      width: 20%;
+    }
+    20% {
+      width: 40%;
+    }
+    30% {
+      width: 10%;
+    }
+    40% {
+      width: 20%;
+    }
+    50% {
+      width: 30%;
+    }
+    60% {
+      width: 20%;
+    }
+    70% {
+      width: 10%;
+    }
+    80% {
+      width: 40%;
+    }
+    90% {
+      width: 10%;
+    }
+    100% {
+      width: 30%;
+    }
+  }
+  /*============
+  .toggle_btn
+  =============*/
+  .toggle_btn {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    transform: translate(0, 0);
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .open .toggle_btn {
+    left: 630px;
+  }
+  .toggle_btn span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #666;
+    transition: all .5s;
+  }
+  .toggle_btn span:nth-child(1) {
+    top: 5px;
+    width: 60px;
+    animation: equalizer01 7000ms infinite;
+  }
+  .toggle_btn span:nth-child(2) {
+    top: 15px;
+    width: 30px;
+    animation: equalizer02 5000ms infinite;
+    animation-delay: 0.33s;
+  }
+  .toggle_btn span:nth-child(3) {
+    top: 25px;
+    width: 20px;
+    animation: equalizer02 5000ms infinite;
+  }
+  .open .toggle_btn span {
+    background-color: #fff;
+    width: 30px;
+  }
+  .open .toggle_btn span:nth-child(1) {
+    transform: translate(0, 10px) rotate(-45deg);
+    animation: unset;
+  }
+  .open .toggle_btn span:nth-child(2) {
+    opacity: 0;
+    animation: unset;
+  }
+  .open .toggle_btn span:nth-child(3) {
+    transform: translate(0, -10px) rotate(45deg);
+    animation: unset;
+  }
+  @media screen and (max-width: 767px) {
+    .open .toggle_btn {
+      left: 260px;
+    }
+  }
+  /*============
+  #mask
+  =============*/
+  #mask {
+    display: none;
+  }
+  .open #mask {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+    z-index: 2;
+    cursor: pointer;
+    transition: all .5s;
+  }
+  /*============
+  #ゲームクリア：はなふぶき
+  =============*/
+  #particles-js{ 
+    position:fixed;/*描画固定*/
+    z-index:-1;/*描画を一番下に*/
+    width: 100%;
+    height: 100%;
+    background-color:white;/*背景色*/
+  }
+  
+  #wrapper{
+    position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+    z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+    width:100%;
+    height: 100%;
+  }
